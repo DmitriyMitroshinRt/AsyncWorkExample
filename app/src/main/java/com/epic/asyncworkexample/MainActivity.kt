@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        private const val GITHUB_LOGO_IMAGE_URL_VAL =
+        private const val GITHUB_LOGO_IMAGE_URL_VAL2 =
             "https://github.githubassets.com/images/modules/logos_page/Octocat.png"
     }
 
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                         findViewById<ImageView>(R.id.image_view).setImageBitmap(result)
                     }
                 }
-            ).execute(GITHUB_LOGO_IMAGE_URL_VAL)
+            ).execute(GITHUB_LOGO_IMAGE_URL_VAL2)
         }
     }
 
