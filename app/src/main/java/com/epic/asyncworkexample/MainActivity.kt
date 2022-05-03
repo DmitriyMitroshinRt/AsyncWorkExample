@@ -18,7 +18,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        findViewById<Button>(R.id.button_view)
+        findViewById<Button>(R.id.button_view).setOnClickListener{
+            imageView.load(GITHUB_LOGO_IMAGE_URL)
+        }
+        /*
         findViewById<Button>(R.id.button_view).setOnClickListener {
             DownloadImageAsyncTask(
                 object : DownloadImageAsyncTask.Callback {
@@ -28,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                 }
             ).execute(GITHUB_LOGO_IMAGE_URL)
         }
+        */
     }
 
     class DownloadImageAsyncTask(
